@@ -1,0 +1,20 @@
+CREATE TABLE `p_persona` (
+  `id_persona` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `nombre` varchar(45) NOT NULL,
+  `apellidop` varchar(25) NOT NULL,
+  `apellidom` varchar(25) NOT NULL,
+  `fecha_nac` varchar(25) NOT NULL,
+  `direccion` varchar(200) NOT NULL,
+  `carnet` varchar(15) NOT NULL,
+  `genero` char(1) NOT NULL,
+  `lugar_nac` varchar(25) NOT NULL,
+  `departamento` varchar(25) NOT NULL,
+  `ciudad` varchar(25) NOT NULL,
+  `celular` varchar(25) NOT NULL,
+  `telefono_fijo` varchar(25) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
+  `id_usuario_reg` int(11) DEFAULT NULL,
+  `fecha_reg` datetime DEFAULT NULL,
+  `borrado` char(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
